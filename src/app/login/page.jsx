@@ -17,9 +17,8 @@ export default function Login() {
       const response = await axios.post("/api/users/login", user);
       console.log(response.data);
       router.push("/dashboard");
-      console.log('Login successful');
     } catch (error) {
-      console.log('on click ' + error);
+      console.log('on click ' + error); 
     }
   };
 
@@ -44,7 +43,7 @@ export default function Login() {
       />
 
       <p className="text-white mt-4">
-        Don't have an account?{" "}
+        Don&apos;st have an account?{" "}
         <span className="text-blue-500 underline">
           <Link href="/signup">Signup</Link>
         </span>
