@@ -9,7 +9,7 @@ const Page = () => {
   const onLogout = async () => {
     try {
       await axios.get('/api/users/logout');
-      router.push('/login');
+      router.push(`/login`);
       console.log('logut successful');
       
     } catch (error) {

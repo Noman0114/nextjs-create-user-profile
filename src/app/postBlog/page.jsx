@@ -14,7 +14,7 @@ const Page = () => {
         try {
             const response = await axios.post('/api/blogs/postblog', blog);
             console.log(response.data);
-            router.push('/blog');
+            router.push(`/blog`);
         } catch (error) {
             console.log('Error: ' + error);
         }
