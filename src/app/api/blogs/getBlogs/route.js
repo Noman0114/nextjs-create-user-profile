@@ -2,10 +2,11 @@ import { connect } from '@/dbConfig/dbConfig';
 import blogData from '@/models/blogModel';
 import { NextResponse } from 'next/server';
 
-connect();
+const passwords = await passData.find({});
 
 export async function GET() {
     try {
+connect();
         // Fetch all blog posts from the database
         const blogs = await blogData.find({});
         
