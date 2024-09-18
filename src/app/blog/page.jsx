@@ -2,9 +2,7 @@ import React from 'react';
 
 // Fetch blogs from the API on the server-side
 async function fetchBlogs() {
-  const res = await fetch('https://nextjs-create-user-profile.vercel.app/api/blogs/getBlogs', {
-    cache: 'no-store', // ensures fresh data every time
-  });
+  const res = await fetch('https://nextjs-create-user-profile.vercel.app/api/blogs/getBlogs');
   if (!res.ok) {
     throw new Error('Failed to fetch blog data');
   }
