@@ -2,8 +2,7 @@ import { connect } from '@/dbConfig/dbConfig';
 import blogData from '@/models/blogModel';
 import { NextResponse } from 'next/server';
 
-const passwords = await passData.find({});
-
+export const dynamic = 'force-dynamic'
 export async function GET() {
     try {
 connect();
